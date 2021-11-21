@@ -1,0 +1,292 @@
+html, body{
+    background-color: azure;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    display: block;
+}
+
+#navbar{
+    padding : 0.75rem 0;
+    background-color: rgb(10, 10, 141);
+}
+
+.text-color{
+    color : rgb(250, 197, 51);
+}
+
+/*------------------------------------------MAIN-2------------------------------------------*/
+.noti{
+    padding: 0 6%;
+    margin-bottom: 5%;
+}
+.content{
+    font-size: 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 2.5% auto 0 auto;
+    color: rgb(189, 24, 24);
+    background-color: rgb(230, 169, 169);
+}
+
+.content-1{
+    margin-bottom: 0;
+}
+
+.content-2{
+    margin-top: 4%;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+.search-noti{
+    padding: 0 2%;
+}
+.cus-search{
+    padding: 5% 0;
+}
+
+.currency{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.value{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 5% 0;
+}
+
+.change{
+    font-size: 12px;
+    color: rgb(105, 179, 32);
+    margin-bottom: 2px;
+}
+
+.change-2{
+    font-size: 12px;
+    color: rgb(235, 58, 27);
+    margin-bottom: 2px
+}
+
+.chart{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    width: 90%;
+    height: 30%;
+    position: relative;
+}
+
+.frame{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d7dadb;
+    background-color: white;
+    padding: 1%;
+}
+
+.advertising{
+    float: right;
+    padding: 0 2%;
+    width: 100%;
+    height: 42%;
+}
+
+.ip{
+    margin-top: 0;
+    height: 80%;
+}
+
+
+/*------------------------------------------MAIN-3------------------------------------------*/
+
+.carousel.slide {
+    background-color: rgb(115, 210, 253);
+    padding: 10px 20px;
+}
+
+.carousel.slide h2 {
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+
+.carousel-item {
+    padding: 20px 10%;
+}
+
+.main-3 {
+    padding: 20px auto;
+}
+
+.main-3 h5 {
+    font-size: 23px;
+    padding-top: 17px;
+    margin: 0 100px;
+    color: rgb(114, 114, 114);
+    text-align: center;
+}
+
+.interact-area {
+    margin: 0 100px;
+    padding-top: 20px;
+}
+
+.main-3 a {
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    font-weight: 100;
+}
+
+.main-3 a:hover {
+    color: rgb(124, 124, 124);
+}
+
+.carousel-inner img {
+    height: 70px;
+    width: 70px;
+    display: block;
+}
+
+.info {
+    width: fit-content;
+    margin: 20px auto 20px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info * {
+    margin: auto;
+}
+
+.info img {
+    height: 70px;
+    width: 70px;
+    display: block;
+}
+
+.name h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.name h3 {
+    padding-top: 5px;
+    color: rgb(212, 0, 0);
+    font-size: 22px;
+    white-space: pre;
+}
+
+.carousel-control-next,
+.carousel-control-prev
+/*, .carousel-indicators */
+
+{
+    filter: invert(100%);
+}
+
+
+/*------------------------------------------MAIN-4------------------------------------------*/
+
+.main-4 {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 310px 40px 310px
+}
+
+.main-4 h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.col-sm {
+    box-shadow: 2px 2px 10px #b8b7b7;
+    margin: 10px;
+}
+
+.col-sm img {
+    padding: 1rem;
+}
+
+.img-fluid{
+    margin-left: 4%;
+    height: 60%;
+
+}
+.col-sm h3 {
+    padding-left: 15px;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+}
+
+.price-area {
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 70px 58px 80px;
+}
+
+.price-area .price {
+    font-size: 20px;
+    font-weight: 650;
+    color: rgb(224, 0, 0);
+}
+
+.price-area .true-price {
+    font-size: 17px;
+    font-weight: 550;
+    text-decoration: line-through;
+    padding-top: 3px;
+    color: rgb(114, 114, 114);
+}
+
+.price-area .coupon {
+    font-weight: 550;
+    font-size: 17px;
+    padding-top: 3px;
+    color: green;
+}
+
+.rate-area {
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 110px 60px;
+}
+
+.star * {
+    color: rgb(236, 174, 2);
+}
+
+.rate-area p {
+    color: rgb(114, 114, 114);
+}
+
+
+/*------------------------------------------FOOTER------------------------------------------*/
+
+.footer {
+    height: 110px;
+    background-color: rgb(231, 231, 231);
+}
+
+.footer .line {
+    margin: auto;
+    padding-top: 45px;
+    width: 90%;
+    border-bottom: 3px solid rgb(0, 68, 0);
+    background-color: transparent;
+}
+
+.footer h3 {
+    padding-top: 15px;
+    padding-left: 94px;
+    font-size: 20px;
+    color: rgb(105, 105, 105);
+}
