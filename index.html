@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>LAB02-BOOTSTRAP</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="./Source/main.css" rel="stylesheet">
+    </head>
+
+    <body>  
+        <!--------------------------------------------------Header_main-1-------------------------------------------------->
+        <header class="p-3 text-white" id="navbar">
+            <div class="container" style=" margin-left:auto; margin-right:auto;">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    
+                    <img  src=" ./Source/logo.png" width="60" height="48" alt="LOGO" >
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-white">TRANG CHỦ</a></li>
+                        <li><a href="#" class="nav-link px-2 text-color border rounded ">NGOẠI TỆ</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">CHỨNG KHOÁN</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">LIÊN HỆ</a></li>
+                    </ul>
+
+                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                        <li class="nav-item col-6 col-md-auto">
+                            <a class="nav-link p-2" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                </svg>
+                                <small class="d-md-none ms-2">Thông báo</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto">
+                            <a class="nav-link p-2" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                </svg>
+                                <small class="d-md-none ms-2">Email</small>
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-warning">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!--------------------------------------------------main-2-------------------------------------------------->
+        <div class="row">
+            <div class="col-md-9">
+                <div class=" noti ">
+                    <ul class=" content">
+                        <p class=" content-1">
+                            Hệ thống phát hiện các hoạt động bất thường liên quan đến tài khoản của bạn. Vui lòng <strong>kiểm tra ngay</strong> nhật ký hoạt động.
+                        </p>
+                    </ul>
+                </div>
+                <div class="content-2 noti ">
+                    Tỉ giá ngoại tệ hiện tại
+                </div>
+                <div class="row noti" style="margin-left: 0; margin-right:0;">
+                    <div class="col-md-4">
+                        <div class="row border rounded " style="margin-right: 5%;">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center " style="background-color: green;">
+                                <div class="image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: white;" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                                        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="col-md-8 col-auto d-lg-block" style="background-color: white;">
+                                    <p class="currency"> USD </p>
+                                    <p class="value"> 23 654 vnd </p>
+                                    <p class="change"> + 232 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row border rounded " style="margin-right: 5%;">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center " style="background-color: red;">
+                                <div class="image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: white;" fill="currentColor" class="bi bi-currency-pound" viewBox="0 0 16 16">
+                                        <path d="M4 8.585h1.969c.115.465.186.939.186 1.43 0 1.385-.736 2.496-2.075 2.771V14H12v-1.24H6.492v-.129c.825-.525 1.135-1.446 1.135-2.694 0-.465-.07-.913-.168-1.352h3.29v-.972H7.22c-.186-.723-.372-1.455-.372-2.247 0-1.274 1.047-2.066 2.58-2.066a5.32 5.32 0 0 1 2.103.465V2.456A5.629 5.629 0 0 0 9.348 2C6.865 2 5.322 3.291 5.322 5.366c0 .775.195 1.515.399 2.247H4v.972z"/>
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="col-md-8 col-auto d-lg-block" style="background-color: white;">
+                                    <p class="currency"> GBP </p>
+                                    <p class="value"> 26 909 vnd </p>
+                                    <p class="change-2"> - 145 </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row border rounded " style="margin-right: 5%;" >
+                            <div class="col-md-4 d-flex align-items-center justify-content-center " style="background-color: green;">
+                                <div class="image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: white;"  fill="currentColor" class="bi bi-currency-euro" viewBox="0 0 16 16">
+                                        <path d="M4 9.42h1.063C5.4 12.323 7.317 14 10.34 14c.622 0 1.167-.068 1.659-.185v-1.3c-.484.119-1.045.17-1.659.17-2.1 0-3.455-1.198-3.775-3.264h4.017v-.928H6.497v-.936c0-.11 0-.219.008-.329h4.078v-.927H6.618c.388-1.898 1.719-2.985 3.723-2.985.614 0 1.175.05 1.659.177V2.194A6.617 6.617 0 0 0 10.341 2c-2.928 0-4.82 1.569-5.244 4.3H4v.928h1.01v1.265H4v.928z"/>
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="col-md-8 col-auto d-lg-block" style="background-color: white;">
+                                    <p class="currency"> EUR </p>
+                                    <p class="value"> 24 914 vnd </p>
+                                    <p class="change"> + 140 </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <main>
+                    <div class="chart">
+                        <canvas id="myChart" class="frame"></canvas>
+                    </div>
+                </main>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
+                <script>
+                    new Chart(document.getElementById("myChart"), {
+                    type: 'line',
+                    data: {
+                        labels: ['01/04', '02/04', '03/04', '05/04', '06/04', '07/04', '08/04'],
+                        datasets: [{ 
+                            data: [23600, 23800, 23500, 23480, 23400, 23400, 23600],
+                            label: "USD",
+                            backgroundColor: 'rgb(204, 98, 98)',
+                            borderColor: 'rgb(204, 98, 98)',
+                            fill: false,
+                            cubicInterpolationMode: 'monotone',
+                            tension: 0.4
+                        }, { 
+                            data: [25900, 25800, 25500, 25480, 25400, 25600, 25700],
+                            label: "EUR",
+                            backgroundColor: 'rgb(12, 94, 201)',
+                            borderColor: 'rgb(12, 94, 201)',
+                            fill: false,
+                            cubicInterpolationMode: 'monotone',
+                            tension: 0.4
+                        }, { 
+                            data: [29200, 29500, 28900, 28800, 28700, 28900, 28300],
+                            label: "GBP",
+                            backgroundColor: 'rgb(39, 175, 84)',
+                            borderColor: 'rgb(39, 175, 84)',
+                            fill: false,
+                            cubicInterpolationMode: 'monotone',
+                            tension: 0.4
+                        }
+                        ]
+                    },
+                    options: {
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Tỉ giá ngoại tệ',
+                                font: {
+                                    size: 22
+                                },
+                            }
+                        }
+                    }
+                    });
+
+                </script>
+            </div>
+            <div class="col-md-3 search-noti">
+                <form class=" col-lg-auto mb-3 mb-lg-0 me-lg-3 cus-search">
+                    <input type="search" class="form-control form-control-dark" placeholder="Tìm kiếm" aria-label="Search">
+                </form>
+                
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h6 class="mb-0">Thông báo số 1</h6>
+                            <p class="mb-0 opacity-75" style="font-size: 0.8rem;">Lorem Ipsum is simple dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h6 class="mb-0">Thông báo nâng cấp hệ thống</h6>
+                            <p class="mb-0 opacity-75" style="font-size: 0.8rem;">Lorem Ipsum is simple dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true" style=" margin-bottom: 4%;">
+                    <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h6 class="mb-0">Thông báo số 2</h6>
+                            <p class="mb-0 opacity-75" style="font-size: 0.8rem;">Lorem Ipsum is simple dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="advertising">
+                    <img class ="advertising" src="./Source/loading.gif" alt="loading...">
+                    <img class ="advertising ip" src="./Source/dienthoai.jpg" alt="advertising">
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--------------------------------------------------main-3-------------------------------------------------->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <h2>chia sẻ từ bạn bè</h2>
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="main-3">
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis justo ac rutrum ultricies. Sed at orci dui. Cras dolor dolor imperdiet justo ac rutrum ultricies.</h5>
+                        <div class="interact-area ">
+                            <div class="info ">
+                                <img src="./Source/img_avatar.png " alt="Avatar ">
+                                <div class="name ">
+                                    <h4>Hữu Nam</h4>
+                                    <h3>Chuyên gia</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="main-3 ">
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis justo ac rutrum ultricies. Sed at orci dui. Cras dolor dolor imperdiet justo ac rutrum ultricies.</h5>
+                        <div class="interact-area ">
+                            <div class="info ">
+                                <img src="./Source/img_avatar.png " alt="Avatar ">
+                                <div class="name ">
+                                    <h4>Hữu Nam</h4>
+                                    <h3>Chuyên gia</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="main-3 ">
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis justo ac rutrum ultricies. Sed at orci dui. Cras dolor dolor imperdiet justo ac rutrum ultricies.</h5>
+                        <div class="interact-area ">
+                            <div class="info ">
+                                <img src="./Source/img_avatar.png " alt="Avatar ">
+                                <div class="name ">
+                                    <h4>Hữu Nam</h4>
+                                    <h3>Chuyên gia</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" style="color: black;"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" style="color: black;"></span>
+            </button>
+        </div>
+
+        <!--------------------------------------------------main-4-------------------------------------------------->
+        <div class="main-4 ">
+            <h2>Quảng cáo</h2>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="./Source/tv.png" class="img-fluid" alt="Avatar">
+                    <h3>Smart Televisions</h3>
+                    <p class="price-area ">
+                        <span class="price ">$45.00</span>
+                        <span class="true-price ">$55.25</span>
+                        <span class="coupon ">35% Off</span>
+                    </p>
+                    <div class="rate-area ">
+                        <div class="star ">
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                        </div>
+                        <p>(21)</p>
+                    </div>
+                </div>
+
+                <div class="col-sm ">
+                    <img src="./Source/Low.png" class="img-fluid" alt="Avatar">
+                    <h3>Sound Equipment For Low</h3>
+                    <p class="price-area ">
+                        <span class="price ">$45.00</span>
+                        <span class="true-price ">$55.25</span>
+                        <span class="coupon ">35% Off</span>
+                    </p>
+                    <div class="rate-area ">
+                        <div class="star ">
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                        </div>
+                        <p>(21)</p>
+                    </div>
+                </div>
+
+                <div class="col-sm ">
+                    <img src="./Source/watch.png " class="img-fluid" alt="Avatar">
+                    <h3>Smart Watch External</h3>
+                    <p class="price-area ">
+                        <span class="price ">$55.00</span>
+                        <span class="true-price ">$95.00</span>
+                        <span class="coupon ">25% Off</span>
+                    </p>
+                    <div class="rate-area ">
+                        <div class="star ">
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                        </div>
+                        <p>(15)</p>
+                    </div>
+                </div>
+
+                <div class="col-sm ">
+                    <img src="./Source/tv.png" class="img-fluid" alt="Avatar">
+                    <h3>Smart Televisions</h3>
+                    <p class="price-area ">
+                        <span class="price ">$45.00</span>
+                        <span class="true-price ">$55.25</span>
+                        <span class="coupon ">35% Off</span>
+                    </p>
+                    <div class="rate-area ">
+                        <div class="star ">
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                            <i class="fa fa-star " aria-hidden="true "></i>
+                        </div>
+                        <p>(21)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------------------------footer-------------------------------------------------->
+        <div class="footer ">
+            <hr class="line ">
+            <h3>© 2020. All Righes Reserved</h3>
+        </div>
+    </body>
+
+</html>
